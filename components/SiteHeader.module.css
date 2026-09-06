@@ -1,0 +1,202 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--surface-0) 88%, transparent);
+  backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--gridline);
+}
+
+.bar {
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ---------- marca ---------- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-right: auto;
+  min-width: 0;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex: none;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.brandTitle {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.brandSub {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* ---------- navegación ---------- */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.link {
+  position: relative;
+  padding: 7px 13px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color var(--dur-fast) var(--ease-out);
+  white-space: nowrap;
+}
+
+.link:hover {
+  color: var(--text-primary);
+}
+
+.linkActive {
+  color: var(--text-on-dark);
+}
+
+/* La píldora se desliza entre secciones con layoutId: da continuidad
+   espacial a un sitio que ahora son páginas separadas. */
+.pill {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--brand-navy);
+  z-index: 0;
+}
+
+:root[data-theme="dark"] .pill {
+  background: var(--brand-red);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pill {
+    background: var(--brand-red);
+  }
+}
+
+.linkLabel {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- acciones ---------- */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.iconBtn {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+
+.iconBtn:hover {
+  background: var(--surface-2);
+  color: var(--text-primary);
+}
+
+.burger {
+  display: none;
+}
+
+/* Los dos iconos del botón de tema se alternan por CSS a partir del atributo
+   que el layout escribe antes del primer paint: sin estado en React, sin
+   desajuste entre servidor y cliente. */
+.iconSun {
+  display: none;
+}
+
+:root[data-theme="dark"] .iconSun {
+  display: block;
+}
+
+:root[data-theme="dark"] .iconMoon {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .iconSun {
+    display: block;
+  }
+  :root:not([data-theme="light"]) .iconMoon {
+    display: none;
+  }
+}
+
+/* ---------- móvil ---------- */
+.mobileNav {
+  overflow: hidden;
+  border-top: 1px solid var(--gridline);
+  background: var(--surface-1);
+}
+
+.mobileNav > div {
+  display: flex;
+  flex-direction: column;
+  padding-block: 8px;
+}
+
+.mobileLink {
+  padding: 11px 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--gridline);
+}
+
+.mobileLink:last-child {
+  border-bottom: none;
+}
+
+.mobileLinkActive {
+  color: var(--brand-red);
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: grid;
+  }
+}
+
+@media (max-width: 420px) {
+  .brandSub {
+    display: none;
+  }
+}

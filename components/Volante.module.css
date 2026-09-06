@@ -1,0 +1,17 @@
+.volante {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* La ilustración es negra sobre transparente: en modo oscuro se invierte a
+   blanco en lugar de mantener una segunda versión del archivo. */
+:root[data-theme="dark"] .volante {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .volante {
+    filter: invert(1);
+  }
+}

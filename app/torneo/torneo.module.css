@@ -1,0 +1,276 @@
+/* ---------- línea de tiempo ---------- */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.fecha {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.marker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 18px;
+  align-self: stretch;
+}
+
+/* Hilo que conecta las fechas: el circuito es una secuencia, no tres eventos
+   sueltos. */
+.marker::after {
+  content: "";
+  position: absolute;
+  top: 34px;
+  bottom: -32px;
+  width: 2px;
+  background: var(--gridline);
+}
+
+.fecha:last-child .marker::after {
+  display: none;
+}
+
+.markerDot {
+  width: 13px;
+  height: 13px;
+  border-radius: 999px;
+  background: var(--brand-red);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand-red) 18%, transparent);
+  z-index: 1;
+}
+
+.pendiente .markerDot {
+  background: var(--surface-2);
+  border: 2px solid var(--border-strong);
+  box-shadow: none;
+}
+
+.markerNum {
+  margin-top: 8px;
+  font-family: var(--font-display), sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--surface-0);
+  padding-block: 2px;
+  z-index: 1;
+}
+
+.fechaCard {
+  padding: 18px 20px;
+}
+
+.pendiente .fechaCard {
+  background: transparent;
+  border-style: dashed;
+  box-shadow: none;
+}
+
+.fechaHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.fechaTitle {
+  font-family: var(--font-display), sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.badgeDone {
+  background: color-mix(in srgb, var(--series-6) 14%, transparent);
+  color: var(--series-6);
+}
+
+.badgeNext {
+  background: var(--surface-2);
+  color: var(--text-muted);
+}
+
+.fechaMeta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px 20px;
+}
+
+.fechaMeta dt {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.fechaMeta dd {
+  font-size: 13.5px;
+  margin-top: 2px;
+  color: var(--text-secondary);
+}
+
+.fechaLink {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--brand-red);
+}
+
+.fechaLink:hover {
+  opacity: 0.75;
+}
+
+.fechaNota {
+  margin-top: 16px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+/* ---------- reglamento ---------- */
+.reglamento {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.rulesCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pointsCard {
+  overflow: hidden;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+}
+
+.points li {
+  display: grid;
+  grid-template-columns: 58px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--gridline);
+}
+
+.points li:last-child {
+  border-bottom: none;
+}
+
+.points li:first-child {
+  background: color-mix(in srgb, var(--medal-gold) 7%, transparent);
+}
+
+.pointsPos {
+  font-family: var(--font-display), sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--brand-navy);
+}
+
+:root[data-theme="dark"] .pointsPos {
+  color: var(--text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pointsPos {
+    color: var(--text-primary);
+  }
+}
+
+.pointsLabel {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.pointsPts {
+  font-family: var(--font-display), sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.ordered {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  counter-reset: step;
+}
+
+.ordered li {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+}
+
+.step {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--text-secondary);
+  flex: none;
+  margin-top: 1px;
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.bullets li {
+  padding-left: 15px;
+  position: relative;
+}
+
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--brand-red);
+}
+
+.neg {
+  color: var(--brand-red);
+}
+
+@media (max-width: 900px) {
+  .reglamento {
+    grid-template-columns: 1fr;
+  }
+  .fecha {
+    grid-template-columns: 44px 1fr;
+    gap: 12px;
+  }
+}

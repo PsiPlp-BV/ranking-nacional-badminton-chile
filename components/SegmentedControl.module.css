@@ -1,0 +1,70 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.label {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.group {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  background: var(--surface-sunken);
+  border: 1px solid var(--gridline);
+}
+
+.segment {
+  position: relative;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.segment:hover:not(:disabled) {
+  color: var(--text-primary);
+}
+
+.segment:disabled {
+  color: var(--text-muted);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.active {
+  color: #fff;
+}
+
+.pill {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  z-index: 0;
+}
+
+.segmentLabel {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 560px) {
+  .group {
+    flex-wrap: wrap;
+  }
+  .segment {
+    padding-inline: 11px;
+    font-size: 12.5px;
+  }
+}

@@ -1,0 +1,283 @@
+/* =========================================================================
+   Ranking Nacional de Bádminton — Chile 2026
+   Sistema de diseño (versión Next)
+
+   La paleta es la oficial de FEDEBADCHILE, heredada tal cual del sitio
+   original: azul federación, azul deportivo, carbono y rojo chileno, más la
+   paleta categórica de dataviz y los tonos de medalla. Lo que cambia acá es
+   cómo se usa: superficie clara y mucho aire, el rojo reservado para una
+   sola cosa a la vez, y el azul como ancla institucional.
+   ========================================================================= */
+
+:root {
+  color-scheme: light;
+
+  /* ---- marca oficial FEDEBADCHILE (no tocar) ---- */
+  --brand-navy: #0d1b4c;
+  --brand-navy-2: #1e3a8a;
+  --brand-carbon: #0a0f1f;
+  --brand-red: #e11d2e;
+  --brand-red-2: #c8121f;
+
+  /* ---- superficies ---- */
+  --surface-0: #f8fafc;
+  --surface-1: #ffffff;
+  --surface-2: #eef2f7;
+  --surface-sunken: #e8edf4;
+  --surface-inverse: var(--brand-carbon);
+
+  /* ---- tinta ---- */
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --text-on-dark: #ffffff;
+  --text-on-dark-secondary: #c7d0dc;
+
+  /* ---- bordes ---- */
+  --gridline: #e6e9ef;
+  --border: rgba(11, 11, 11, 0.1);
+  --border-strong: rgba(11, 11, 11, 0.18);
+
+  /* ---- paleta categórica (orden fijo, validada para dataviz) ---- */
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+  --series-6: #008300;
+  --series-7: #4a3aa7;
+  --series-8: #e34948;
+
+  /* ---- medallas ---- */
+  --medal-gold: #c9971f;
+  --medal-gold-bg: #fbf1da;
+  --medal-silver: #8a8f98;
+  --medal-silver-bg: #eef0f2;
+  --medal-bronze: #a8622f;
+  --medal-bronze-bg: #f6e8dd;
+
+  /* ---- forma ---- */
+  --radius-s: 6px;
+  --radius-m: 12px;
+  --radius-l: 20px;
+  --shadow-sm: 0 1px 2px rgba(11, 11, 11, 0.05);
+  --shadow-card: 0 1px 2px rgba(11, 11, 11, 0.04), 0 10px 30px -18px rgba(13, 27, 76, 0.35);
+  --shadow-lift: 0 2px 4px rgba(11, 11, 11, 0.05), 0 18px 40px -20px rgba(13, 27, 76, 0.45);
+
+  /* ---- ritmo ---- */
+  --page-max: 1180px;
+  --header-h: 64px;
+  --gap: 20px;
+
+  /* ---- movimiento ---- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 140ms;
+  --dur: 260ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --surface-0: #080d1a;
+    --surface-1: #0f1729;
+    --surface-2: #16203a;
+    --surface-sunken: #0b1120;
+    --surface-inverse: #060a14;
+    --text-primary: #f4f7fb;
+    --text-secondary: #b9c3d4;
+    --text-muted: #7f8aa0;
+    --gridline: #1e2942;
+    --border: rgba(255, 255, 255, 0.09);
+    --border-strong: rgba(255, 255, 255, 0.18);
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --series-4: #c98500;
+    --series-5: #d55181;
+    --series-6: #1fa31f;
+    --series-7: #9085e9;
+    --series-8: #e66767;
+    --medal-gold-bg: rgba(201, 151, 31, 0.16);
+    --medal-silver-bg: rgba(138, 143, 152, 0.16);
+    --medal-bronze-bg: rgba(168, 98, 47, 0.16);
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px -18px rgba(0, 0, 0, 0.8);
+    --shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.4), 0 18px 40px -20px rgba(0, 0, 0, 0.9);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --surface-0: #080d1a;
+  --surface-1: #0f1729;
+  --surface-2: #16203a;
+  --surface-sunken: #0b1120;
+  --surface-inverse: #060a14;
+  --text-primary: #f4f7fb;
+  --text-secondary: #b9c3d4;
+  --text-muted: #7f8aa0;
+  --gridline: #1e2942;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
+  --series-6: #1fa31f;
+  --series-7: #9085e9;
+  --series-8: #e66767;
+  --medal-gold-bg: rgba(201, 151, 31, 0.16);
+  --medal-silver-bg: rgba(138, 143, 152, 0.16);
+  --medal-bronze-bg: rgba(168, 98, 47, 0.16);
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px -18px rgba(0, 0, 0, 0.8);
+  --shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.4), 0 18px 40px -20px rgba(0, 0, 0, 0.9);
+}
+
+/* ---------- reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--surface-0);
+  color: var(--text-primary);
+  font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand-red);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* ---------- tipografía de display ---------- */
+.display {
+  font-family: var(--font-display), var(--font-sans), system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* ---------- utilidades de layout ---------- */
+.container {
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-inline: 16px;
+  }
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- movimiento ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Barra de progreso de navegación entre páginas */
+::selection {
+  background: color-mix(in srgb, var(--brand-red) 22%, transparent);
+}

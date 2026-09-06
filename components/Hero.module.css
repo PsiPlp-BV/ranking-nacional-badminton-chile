@@ -1,0 +1,171 @@
+.hero {
+  position: relative;
+  padding-block: clamp(36px, 6vw, 76px) clamp(36px, 6vw, 68px);
+  border-bottom: 1px solid var(--gridline);
+  overflow: hidden;
+}
+
+/* Halo suave en azul federación: da profundidad sin meter una imagen ni
+   competir con el marcador. */
+.glow {
+  position: absolute;
+  inset: -40% 30% 40% -20%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    color-mix(in srgb, var(--brand-navy-2) 14%, transparent) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: 52px;
+  align-items: center;
+}
+
+/* ---------- copia ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 13px 5px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface-1);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.badgeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--brand-red);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-red) 20%, transparent);
+}
+
+.title {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  font-size: clamp(38px, 6vw, 62px);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  margin-top: 18px;
+  color: var(--brand-navy);
+}
+
+:root[data-theme="dark"] .title {
+  color: var(--text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .title {
+    color: var(--text-primary);
+  }
+}
+
+.titleAccent {
+  color: var(--brand-red);
+}
+
+.lede {
+  margin-top: 18px;
+  max-width: 50ch;
+  font-size: 15.5px;
+  color: var(--text-secondary);
+}
+
+.ctas {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.btnPrimary,
+.btnGhost {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  padding-inline: 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform var(--dur-fast) var(--ease-out),
+    background var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur) var(--ease-out);
+}
+
+.btnPrimary {
+  background: var(--brand-red);
+  color: #fff;
+  box-shadow: 0 8px 20px -10px color-mix(in srgb, var(--brand-red) 80%, transparent);
+}
+
+.btnPrimary:hover {
+  background: var(--brand-red-2);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px -12px color-mix(in srgb, var(--brand-red) 85%, transparent);
+}
+
+.btnGhost {
+  border: 1px solid var(--border-strong);
+  color: var(--text-primary);
+}
+
+.btnGhost:hover {
+  border-color: var(--text-muted);
+  transform: translateY(-2px);
+}
+
+/* ---------- métricas ---------- */
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 34px;
+  margin-top: 34px;
+  padding-top: 24px;
+  border-top: 1px solid var(--gridline);
+}
+
+.meta dt {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.meta dd {
+  font-family: var(--font-display), sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 2px 0 0;
+  color: var(--text-primary);
+}
+
+.metaText {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: var(--text-secondary) !important;
+  max-width: 15ch;
+}
+
+.stage {
+  min-width: 0;
+}
+
+@media (max-width: 940px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .lede {
+    max-width: none;
+  }
+}

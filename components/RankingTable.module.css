@@ -1,0 +1,61 @@
+.toolbar {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px 20px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.searchField {
+  min-width: 190px;
+}
+
+.count {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding-bottom: 8px;
+  white-space: nowrap;
+}
+
+.count strong {
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.tableCard {
+  overflow: hidden;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.names {
+  font-weight: 600;
+  min-width: 0;
+}
+
+.nameLink {
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.nameLink:hover {
+  color: var(--brand-red);
+}
+
+.clubs {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* La columna del alcance activo se destaca con una guía, no con color:
+   el rojo queda reservado para una sola cosa por pantalla. */
+.tableCard th[data-active] {
+  color: var(--text-primary);
+  box-shadow: inset 0 -2px 0 var(--brand-red);
+}

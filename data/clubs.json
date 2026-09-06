@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Club Deportivo Kaizen",
+    "short": "CDSC Kaizen",
+    "color": "#008300",
+    "athletes": 21,
+    "gold": 14,
+    "silver": 30,
+    "bronze": 26,
+    "by_fecha": {
+      "1": 230,
+      "2": 269
+    },
+    "total_points": 499,
+    "rank": 1
+  },
+  {
+    "name": "Club Bádminton Antofagasta",
+    "short": "CB Antofagasta",
+    "color": "#2a78d6",
+    "athletes": 23,
+    "gold": 30,
+    "silver": 12,
+    "bronze": 13,
+    "by_fecha": {
+      "1": 256,
+      "2": 226
+    },
+    "total_points": 482,
+    "rank": 2
+  },
+  {
+    "name": "Club Bádminton Victoria",
+    "short": "CB Victoria",
+    "color": "#4a3aa7",
+    "athletes": 15,
+    "gold": 8,
+    "silver": 6,
+    "bronze": 15,
+    "by_fecha": {
+      "1": 103,
+      "2": 167
+    },
+    "total_points": 270,
+    "rank": 3
+  },
+  {
+    "name": "Club Bádminton Santiago",
+    "short": "CB Santiago",
+    "color": "#e87ba4",
+    "athletes": 19,
+    "gold": 2,
+    "silver": 3,
+    "bronze": 19,
+    "by_fecha": {
+      "1": 134,
+      "2": 120
+    },
+    "total_points": 254,
+    "rank": 4
+  },
+  {
+    "name": "Club Bádminton Limarí",
+    "short": "CB Limarí",
+    "color": "#eb6834",
+    "athletes": 12,
+    "gold": 0,
+    "silver": 2,
+    "bronze": 5,
+    "by_fecha": {
+      "1": 107,
+      "2": 0
+    },
+    "total_points": 107,
+    "rank": 5
+  },
+  {
+    "name": "Club Bádminton Concón",
+    "short": "CB Concón",
+    "color": "#8a5a3c",
+    "athletes": 1,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 3,
+    "by_fecha": {
+      "1": 0,
+      "2": 60
+    },
+    "total_points": 60,
+    "rank": 6
+  },
+  {
+    "name": "Club Bádminton Esperanza de Quilpué",
+    "short": "CB Esperanza de Quilpué",
+    "color": "#eda100",
+    "athletes": 2,
+    "gold": 0,
+    "silver": 1,
+    "bronze": 0,
+    "by_fecha": {
+      "1": 57,
+      "2": 0
+    },
+    "total_points": 57,
+    "rank": 7
+  },
+  {
+    "name": "Club Bádminton Valparaíso",
+    "short": "CB Valparaíso",
+    "color": "#1baf7a",
+    "athletes": 3,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "by_fecha": {
+      "1": 53,
+      "2": 0
+    },
+    "total_points": 53,
+    "rank": 8
+  }
+]
