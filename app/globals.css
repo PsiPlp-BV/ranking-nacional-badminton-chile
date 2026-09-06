@@ -75,6 +75,11 @@
   --dur: 260ms;
 }
 
+/* El tema por defecto es CLARO, no el del sistema: `app/layout.tsx` deja
+   siempre `data-theme` en el <html> (claro salvo que la persona haya elegido
+   oscuro antes). Por eso este bloque, que seguiría la preferencia del SO,
+   queda inerte mientras el atributo esté presente; se mantiene como respaldo
+   por si alguna vez se quisiera volver al modo automático. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;

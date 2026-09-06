@@ -17,10 +17,9 @@ import styles from "./SiteHeader.module.css";
  */
 function toggleTheme() {
   const root = document.documentElement;
-  const isDark = root.dataset.theme
-    ? root.dataset.theme === "dark"
-    : window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const next = isDark ? "light" : "dark";
+  // El layout siempre deja `data-theme` puesto (claro por defecto), así que
+  // basta leerlo: no hace falta consultar la preferencia del sistema.
+  const next = root.dataset.theme === "dark" ? "light" : "dark";
   root.dataset.theme = next;
   try {
     localStorage.setItem("theme", next);

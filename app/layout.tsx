@@ -32,22 +32,28 @@ export const metadata: Metadata = {
   },
 };
 
+// El sitio abre en claro, así que la barra del navegador acompaña ese tono.
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
-    { media: "(prefers-color-scheme: dark)", color: "#080d1a" },
-  ],
+  themeColor: "#f8fafc",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es-CL" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
+    // `data-theme="light"` fija el tema inicial: quien entra por primera vez ve
+    // el sitio claro, tenga el sistema operativo como lo tenga. El oscuro queda
+    // como elección explícita del usuario, no como default heredado del SO.
+    <html
+      lang="es-CL"
+      data-theme="light"
+      className={`${sans.variable} ${display.variable}`}
+      suppressHydrationWarning
+    >
       <head>
-        {/* Aplica el tema guardado antes del primer paint para que no haya
-            un destello de tema claro en quien eligió oscuro. */}
+        {/* Reaplica el tema guardado antes del primer paint, para que quien ya
+            eligió oscuro no vea un destello claro al cargar. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `try{var t=localStorage.getItem("theme");if(t){document.documentElement.dataset.theme=t}}catch(e){}`,
+            __html: `try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light"){document.documentElement.dataset.theme=t}}catch(e){}`,
           }}
         />
       </head>
