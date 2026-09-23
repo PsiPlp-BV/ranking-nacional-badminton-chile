@@ -9,7 +9,7 @@ import styles from "./federacion.module.css";
 export const metadata: Metadata = {
   title: "Federación",
   description:
-    "Federación Chilena de Badminton (FEDEBADCHILE): directiva, gerencia, sede y auspiciadores.",
+    "Federación Chilena de Badminton (FEDEBADCHILE): directiva, equipo, sede y colaboradores.",
 };
 
 function SocialIcon({ icon }: { icon: string }) {
@@ -121,7 +121,7 @@ export default function FederacionPage() {
 
             <Reveal delay={0.12}>
               <div className={`${ui.card} ${ui.cardPad}`}>
-                <h2 className={ui.cardTitle}>Gerencia</h2>
+                <h2 className={ui.cardTitle}>Equipo FEDEBAD</h2>
                 <ul className={styles.people}>
                   {f.gerencia.map((p) => (
                     <li key={p.nombre}>
@@ -137,7 +137,7 @@ export default function FederacionPage() {
 
         <Reveal delay={0.06}>
           <div className={styles.sponsors}>
-            <h2 className="eyebrow">Auspiciadores institucionales</h2>
+            <h2 className="eyebrow">Colaboradores institucionales</h2>
             <ul className={styles.sponsorList}>
               {f.auspiciadores.map((a) =>
                 a.url ? (

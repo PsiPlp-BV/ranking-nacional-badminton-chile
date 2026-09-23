@@ -62,7 +62,7 @@ export default function SiteFooter() {
         </div>
 
         <div className={styles.col}>
-          <h2 className="eyebrow">Auspiciadores</h2>
+          <h2 className="eyebrow">Colaboradores</h2>
           <ul>
             {FEDERATION.auspiciadores.map((a) => (
               <li key={a.nombre}>
@@ -91,9 +91,7 @@ export default function SiteFooter() {
             Tournamentsoftware
           </a>
         </p>
-        <p className={styles.privacy}>
-          Solo se publican datos deportivos públicos: nombre, club, categoría y resultados.
-        </p>
+        <p className={styles.privacy}>Desarrollado por Benjamin Varas O.</p>
       </div>
     </footer>
   );
