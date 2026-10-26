@@ -126,6 +126,14 @@
   border-top: 1px solid var(--gridline);
 }
 
+/* Misma altura que el pie con medallas y puntos, para que las tarjetas no salten. */
+.debut {
+  min-height: 43px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
 .pts {
   display: flex;
   align-items: baseline;

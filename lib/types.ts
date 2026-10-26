@@ -23,6 +23,8 @@ export interface Player {
   categories: string[];
   modalities: string[];
   results: Result[];
+  /** Fechas en que está inscrito; solo pesan mientras la fecha está "proxima". */
+  inscripciones?: { fecha: FechaNum; categorias: string[] }[];
   color: string;
 }
 

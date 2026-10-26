@@ -3,7 +3,14 @@
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
 import { useMemo, useState } from "react";
-import { CATEGORIES, CLUBS, PLAYERS, clubColor } from "@/lib/data";
+import {
+  CATEGORIES,
+  CLUBS,
+  PLAYERS,
+  categoriasVisibles,
+  clubColor,
+  inscripcionesPendientes,
+} from "@/lib/data";
 import { Avatar, Medals } from "./bits";
 import ui from "./ui.module.css";
 import styles from "./PlayersGrid.module.css";
@@ -40,7 +47,7 @@ export default function PlayersGrid() {
     const needle = norm(q.trim());
     return PLAYERS.filter((p) => {
       if (club !== "todos" && p.club !== club) return false;
-      if (category !== "todas" && !p.categories.includes(category)) return false;
+      if (category !== "todas" && !categoriasVisibles(p).includes(category)) return false;
       if (needle && !norm(p.name).includes(needle) && !norm(p.club).includes(needle)) return false;
       return true;
     });
@@ -100,7 +107,9 @@ export default function PlayersGrid() {
           Desaparecen de una; las que entran o se reordenan sí se animan. */}
       {results.length ? (
         <motion.ul layout={!reduce} className={styles.grid} onMouseMove={spotlight}>
-          {results.map((p, i) => (
+          {results.map((p, i) => {
+            const debut = p.results.length ? undefined : inscripcionesPendientes(p)[0];
+            return (
             <motion.li
                 key={p.id}
                 layout={!reduce}
@@ -127,7 +136,7 @@ export default function PlayersGrid() {
                   </span>
 
                   <span className={styles.cats}>
-                    {p.categories.map((c) => {
+                    {categoriasVisibles(p).map((c) => {
                       const cat = CATEGORIES.find((x) => x.id === c);
                       return (
                         <span
@@ -144,16 +153,24 @@ export default function PlayersGrid() {
                     })}
                   </span>
 
-                  <span className={styles.cardFoot}>
-                    <Medals gold={p.gold} silver={p.silver} bronze={p.bronze} />
-                    <span className={styles.pts}>
-                      <span className="num">{p.total_points}</span>
-                      <span className={styles.ptsLabel}>pts</span>
+                  {debut ? (
+                    // Aún no compite: en vez de medallas y puntos en cero, su debut.
+                    <span className={`${styles.cardFoot} ${styles.debut}`}>
+                      Debuta en la {debut.fecha}ª Fecha
                     </span>
-                  </span>
+                  ) : (
+                    <span className={styles.cardFoot}>
+                      <Medals gold={p.gold} silver={p.silver} bronze={p.bronze} />
+                      <span className={styles.pts}>
+                        <span className="num">{p.total_points}</span>
+                        <span className={styles.ptsLabel}>pts</span>
+                      </span>
+                    </span>
+                  )}
                 </Link>
               </motion.li>
-            ))}
+            );
+          })}
         </motion.ul>
       ) : (
         <p className={ui.empty}>

@@ -64,7 +64,7 @@ export default function TorneoPage() {
                     {f.eventos != null && (
                       <div>
                         <dt>Cuadros</dt>
-                        <dd>{f.eventos} disputados</dd>
+                        <dd>{f.eventos}{f.estado === "completado" ? " disputados" : ""}</dd>
                       </div>
                     )}
                     {f.inscritos != null && (
@@ -81,7 +81,7 @@ export default function TorneoPage() {
                       rel="noopener noreferrer"
                       className={styles.fechaLink}
                     >
-                      Ver resultados oficiales →
+                      {f.estado === "completado" ? "Ver resultados oficiales" : "Ver cuadros oficiales"} →
                     </a>
                   ) : (
                     <p className={styles.fechaNota}>

@@ -117,8 +117,10 @@
       "sede": "Centro de Entrenamiento Olímpico (CEO), Ñuñoa, Santiago",
       "sedeCorta": "CEO, Santiago",
       "estado": "proxima",
-      "eventos": null,
-      "inscritos": null
+      "eventos": 19,
+      "inscritos": 88,
+      "fuente": "Tournamentsoftware.com — Federación Chilena de Badminton",
+      "fuenteUrl": "https://www.tournamentsoftware.com/tournament/d719b846-761e-4340-8cd0-5addb561e2e7"
     }
   ],
   "CLUB_RULES": {

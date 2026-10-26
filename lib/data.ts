@@ -47,6 +47,20 @@ export function pointsInCategory(player: Player, category: string): number {
     .reduce((s, r) => s + r.points, 0);
 }
 
+/** Inscripciones en fechas que todavía no se juegan. Quien solo tiene esto
+ *  (sin resultados) es un debutante: tiene perfil, pero aún no puntos. */
+export function inscripcionesPendientes(player: Player) {
+  return (player.inscripciones ?? []).filter(
+    (i) => FECHAS.find((f) => f.numero === i.fecha)?.estado === "proxima",
+  );
+}
+
+/** Categorías que se muestran: las jugadas o, si aún no juega, las inscritas. */
+export function categoriasVisibles(player: Player): string[] {
+  if (player.results.length) return player.categories;
+  return [...new Set(inscripcionesPendientes(player).flatMap((i) => i.categorias))];
+}
+
 /** Top N de una categoría. Cada categoría se calcula por separado, a propósito. */
 export function topInCategory(category: string, n = 3) {
   return PLAYERS.map((p) => ({ player: p, points: pointsInCategory(p, category) }))
@@ -67,7 +81,7 @@ export function topInCategory(category: string, n = 3) {
 
    El dobles mixto no define rama por sí solo (cada pareja tiene uno de cada),
    así que no se usa para deducir. Con los datos actuales alcanza igual: las
-   97 personas del circuito quedan asignadas sin ambigüedad y sin conflictos,
+   97 personas con resultados quedan asignadas sin ambigüedad y sin conflictos,
    y las 53 parejas de mixto resultan tener siempre un integrante de cada
    rama, que es la comprobación cruzada de que la deducción está bien. */
 

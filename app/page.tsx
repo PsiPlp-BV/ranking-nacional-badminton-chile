@@ -135,6 +135,11 @@ export default function Home() {
               <h3 className={styles.stripTitle}>{proxima?.nombre ?? "Temporada cerrada"}</h3>
               <p className={styles.stripMeta}>{proxima?.fechaTexto}</p>
               <p className={styles.stripMeta}>{proxima?.sede}</p>
+              {proxima?.inscritos != null && (
+                <p className={styles.stripMeta}>
+                  {proxima.eventos} cuadros · {proxima.inscritos} inscritos
+                </p>
+              )}
             </div>
             <Link href="/torneo" className={styles.stripLink}>
               Calendario y reglamento →

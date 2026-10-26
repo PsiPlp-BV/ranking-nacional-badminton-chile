@@ -126,6 +126,15 @@
         "partner": "Francisca Riquelme"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "felipe-canario",
     "color": "#008300"
   },
@@ -245,6 +254,15 @@
         "position": 1,
         "points": 100,
         "partner": "Felipe Canario"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
       }
     ],
     "id": "francisca-riquelme",
@@ -369,6 +387,16 @@
         "partner": "Angel Lorca Contreras"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Sub19",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "josefina-reyes",
     "color": "#008300"
   },
@@ -479,6 +507,15 @@
         "position": 1,
         "points": 100,
         "partner": "Antonia Cardona"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15",
+          "Adulto"
+        ]
       }
     ],
     "id": "fabian-diaz-gomez",
@@ -602,6 +639,15 @@
         "partner": "Josefina Reyes"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "angel-lorca-contreras",
     "color": "#e87ba4"
   },
@@ -712,6 +758,15 @@
         "position": 3,
         "points": 60,
         "partner": "Nicole Pantoja Sepúlveda"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
       }
     ],
     "id": "cristobal-melgarejo-rozas",
@@ -836,6 +891,15 @@
         "partner": "Gabriel Ponce Barra"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "simon-alvarez",
     "color": "#2a78d6"
   },
@@ -909,6 +973,14 @@
         "position": 1,
         "points": 100,
         "partner": "Bruno Mora"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
       }
     ],
     "id": "ashley-montre-rubilar",
@@ -1013,6 +1085,16 @@
         "position": 3,
         "points": 60,
         "partner": "Cristóbal Melgarejo Rozas"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Sub19",
+          "Adulto"
+        ]
       }
     ],
     "id": "nicole-pantoja-sepulveda",
@@ -1127,6 +1209,15 @@
         "partner": "Ashlyn Alcons"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "bastian-astudillo-quispe",
     "color": "#2a78d6"
   },
@@ -1200,6 +1291,14 @@
         "position": 1,
         "points": 100,
         "partner": "Ashley Montre Rubilar"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
       }
     ],
     "id": "bruno-mora",
@@ -1277,6 +1376,14 @@
         "partner": "Felipe Canario"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
     "id": "vania-diaz",
     "color": "#008300"
   },
@@ -1351,6 +1458,15 @@
         "position": 2,
         "points": 80,
         "partner": "Jeronimo Cardona"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15",
+          "Adulto"
+        ]
       }
     ],
     "id": "francisca-diaz-gomez",
@@ -1457,6 +1573,15 @@
         "partner": "Sarai Espinoza Manquecura"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "gabriel-ponce-barra",
     "color": "#2a78d6"
   },
@@ -1559,6 +1684,14 @@
         "position": 3,
         "points": 60,
         "partner": null
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
       }
     ],
     "id": "agustin-troncoso",
@@ -1673,6 +1806,15 @@
         "partner": "Cristóbal Melgarejo Rozas"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "vicente-torres-huidobro",
     "color": "#2a78d6"
   },
@@ -1776,6 +1918,15 @@
         "partner": "Emilia Gonzalez"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "wei-quan-oscar-cen-he",
     "color": "#e87ba4"
   },
@@ -1869,6 +2020,15 @@
         "partner": "Angel Lorca Contreras"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "emmanuel-esquer-coutino",
     "color": "#e87ba4"
   },
@@ -1934,6 +2094,15 @@
         "position": 1,
         "points": 100,
         "partner": "Fabian Diaz Gomez"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15",
+          "Adulto"
+        ]
       }
     ],
     "id": "antonia-cardona",
@@ -2013,6 +2182,14 @@
         "partner": "Gaspar Ponce"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
+      }
+    ],
     "id": "consuelo-valdebenito",
     "color": "#008300"
   },
@@ -2087,6 +2264,15 @@
         "position": 3,
         "points": 60,
         "partner": "Agustin Troncoso"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15",
+          "Adulto"
+        ]
       }
     ],
     "id": "emilia-perez",
@@ -2210,6 +2396,15 @@
         "partner": "Sofia Tello"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "ignacio-navarrete",
     "color": "#008300"
   },
@@ -2284,6 +2479,16 @@
         "position": 1,
         "points": 100,
         "partner": "Simón Álvarez"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Sub19",
+          "Adulto"
+        ]
       }
     ],
     "id": "josefa-morales-castillo",
@@ -2362,6 +2567,14 @@
         "partner": "Felipe Saez Zurita"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
+      }
+    ],
     "id": "amanda-senn",
     "color": "#008300"
   },
@@ -2438,6 +2651,7 @@
         "partner": "Gabriel Ponce Barra"
       }
     ],
+    "inscripciones": [],
     "id": "alexandra-campusano-molina",
     "color": "#2a78d6"
   },
@@ -2513,6 +2727,7 @@
         "partner": "Daniel Astudillo Opazo"
       }
     ],
+    "inscripciones": [],
     "id": "andrea-montero-sanchez",
     "color": "#8a5a3c"
   },
@@ -2587,6 +2802,14 @@
         "position": 5,
         "points": 30,
         "partner": "Derek Oses"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
       }
     ],
     "id": "fabiola-neumann",
@@ -2674,6 +2897,14 @@
         "partner": "Gabriel Ponce Barra"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19"
+        ]
+      }
+    ],
     "id": "sarai-espinoza-manquecura",
     "color": "#e87ba4"
   },
@@ -2749,6 +2980,14 @@
         "partner": "Amanda Senn"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
+      }
+    ],
     "id": "felipe-saez-zurita",
     "color": "#008300"
   },
@@ -2814,6 +3053,15 @@
         "position": 4,
         "points": 50,
         "partner": "Sarai Espinoza Manquecura"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
       }
     ],
     "id": "joaquin-bugueno-chinchilla",
@@ -2891,6 +3139,14 @@
         "partner": "Fabiola Neumann"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
+      }
+    ],
     "id": "derek-oses",
     "color": "#008300"
   },
@@ -2938,6 +3194,15 @@
         "position": 3,
         "points": 60,
         "partner": "Beatriz Palma"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15",
+          "Sub17"
+        ]
       }
     ],
     "id": "vicente-rivera",
@@ -2988,6 +3253,7 @@
         "partner": "Matias Lema"
       }
     ],
+    "inscripciones": [],
     "id": "martina-medina",
     "color": "#008300"
   },
@@ -3055,6 +3321,15 @@
         "partner": "Teo Arentsen Piracés"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "steven-jialuo-li-zhong",
     "color": "#e87ba4"
   },
@@ -3102,6 +3377,15 @@
         "position": 3,
         "points": 60,
         "partner": "Vicente Rivera"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Sub19"
+        ]
       }
     ],
     "id": "beatriz-palma",
@@ -3152,6 +3436,7 @@
         "partner": "Amaro Valdebenito"
       }
     ],
+    "inscripciones": [],
     "id": "monserrat-loyola",
     "color": "#008300"
   },
@@ -3200,6 +3485,7 @@
         "partner": "Monserrat Loyola"
       }
     ],
+    "inscripciones": [],
     "id": "amaro-valdebenito",
     "color": "#008300"
   },
@@ -3266,6 +3552,14 @@
         "partner": "Daniel Cortez"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
     "id": "javiera-pantoja-andrades",
     "color": "#4a3aa7"
   },
@@ -3314,6 +3608,7 @@
         "partner": "Ricardo Muñoz Toledo"
       }
     ],
+    "inscripciones": [],
     "id": "ting-ting-chou-hu",
     "color": "#2a78d6"
   },
@@ -3380,6 +3675,7 @@
         "partner": "Gabriel Ponce Barra"
       }
     ],
+    "inscripciones": [],
     "id": "cristobal-miranda-rodriguez",
     "color": "#2a78d6"
   },
@@ -3448,6 +3744,16 @@
         "partner": "Wei Quan Oscar Cen He"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Sub19",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "emilia-gonzalez",
     "color": "#e87ba4"
   },
@@ -3505,6 +3811,15 @@
         "partner": "Yeiden Ramirez Reinoso"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "gabriel-vicencio-lopez",
     "color": "#eb6834"
   },
@@ -3543,6 +3858,7 @@
         "partner": "Mathias Williams"
       }
     ],
+    "inscripciones": [],
     "id": "gonzalo-avello",
     "color": "#008300"
   },
@@ -3609,6 +3925,14 @@
         "partner": "Haojun Luo Wo"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
+      }
+    ],
     "id": "haofeng-luo-wo",
     "color": "#2a78d6"
   },
@@ -3666,6 +3990,15 @@
         "partner": "Gabriel Vicencio López"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "yeiden-ramirez-reinoso",
     "color": "#eb6834"
   },
@@ -3712,6 +4045,14 @@
         "position": 5,
         "points": 30,
         "partner": "Consuelo Valdebenito"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
       }
     ],
     "id": "gaspar-ponce",
@@ -3771,6 +4112,15 @@
         "partner": "Steven Jialuo Li Zhong"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "teo-arentsen-piraces",
     "color": "#e87ba4"
   },
@@ -3819,6 +4169,7 @@
         "partner": "Ignacio Navarrete"
       }
     ],
+    "inscripciones": [],
     "id": "sofia-tello",
     "color": "#008300"
   },
@@ -3857,13 +4208,21 @@
         "partner": "Simón Álvarez"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
     "id": "camila-macaya",
     "color": "#2a78d6"
   },
   {
     "name": "Vadot Elise",
-    "club": "Independiente",
-    "club_short": "Independiente",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
     "total_points": 130,
     "gold": 0,
     "silver": 0,
@@ -3905,8 +4264,16 @@
         "partner": "Martín Corvalán Morbiducci"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
     "id": "vadot-elise",
-    "color": "#898781"
+    "color": "#e87ba4"
   },
   {
     "name": "Emilia Palma",
@@ -3953,6 +4320,15 @@
         "position": 3,
         "points": 60,
         "partner": "Beatriz Palma"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Sub19"
+        ]
       }
     ],
     "id": "emilia-palma",
@@ -4049,6 +4425,15 @@
         "partner": "Jorge Higuera"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "jhon-alcons-calle",
     "color": "#2a78d6"
   },
@@ -4095,6 +4480,14 @@
         "position": 5,
         "points": 30,
         "partner": "Juan Guillermo Del Pino"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
       }
     ],
     "id": "valentina-arriagada-noack",
@@ -4172,6 +4565,14 @@
         "partner": "Andrea Montero Sanchez"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
     "id": "daniel-astudillo-opazo",
     "color": "#e87ba4"
   },
@@ -4208,6 +4609,14 @@
         "position": 2,
         "points": 80,
         "partner": "Francisca Diaz Gomez"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
       }
     ],
     "id": "jeronimo-cardona",
@@ -4248,6 +4657,7 @@
         "partner": "Gonzalo Avello"
       }
     ],
+    "inscripciones": [],
     "id": "mathias-williams",
     "color": "#008300"
   },
@@ -4294,6 +4704,14 @@
         "position": 5,
         "points": 30,
         "partner": "Javiera Pantoja Andrades"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
       }
     ],
     "id": "daniel-cortez",
@@ -4344,6 +4762,14 @@
         "partner": "Cristobal Mena"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
+      }
+    ],
     "id": "josefa-torres",
     "color": "#2a78d6"
   },
@@ -4382,6 +4808,7 @@
         "partner": "Monserrat Loyola"
       }
     ],
+    "inscripciones": [],
     "id": "amanda-carvajal",
     "color": "#008300"
   },
@@ -4430,6 +4857,14 @@
         "partner": "Valentina Arriagada Noack"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
     "id": "juan-guillermo-del-pino",
     "color": "#eda100"
   },
@@ -4468,13 +4903,14 @@
         "partner": "Vicente González Candia"
       }
     ],
+    "inscripciones": [],
     "id": "lorenzo-loyola-soto",
     "color": "#eb6834"
   },
   {
     "name": "Nicolas Monne",
-    "club": "Club Deportivo Kaizen",
-    "club_short": "CDSC Kaizen",
+    "club": "Club Bádminton Victoria",
+    "club_short": "CB Victoria",
     "total_points": 90,
     "gold": 0,
     "silver": 1,
@@ -4506,8 +4942,16 @@
         "partner": "Felipe Canario"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
     "id": "nicolas-monne",
-    "color": "#008300"
+    "color": "#4a3aa7"
   },
   {
     "name": "Vicente Fuentes",
@@ -4544,6 +4988,7 @@
         "partner": "Sebastian Millacoy"
       }
     ],
+    "inscripciones": [],
     "id": "vicente-fuentes",
     "color": "#4a3aa7"
   },
@@ -4602,6 +5047,7 @@
         "partner": "Bastian Astudillo Quispe"
       }
     ],
+    "inscripciones": [],
     "id": "ashlyn-alcons",
     "color": "#2a78d6"
   },
@@ -4659,6 +5105,7 @@
         "partner": "Siul Carrasco"
       }
     ],
+    "inscripciones": [],
     "id": "camilo-huenchuman",
     "color": "#e87ba4"
   },
@@ -4707,6 +5154,7 @@
         "partner": "Vadot Elise"
       }
     ],
+    "inscripciones": [],
     "id": "martin-corvalan-morbiducci",
     "color": "#e87ba4"
   },
@@ -4782,6 +5230,14 @@
         "partner": "Emilia Gonzalez"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
     "id": "ricardo-munoz-toledo",
     "color": "#e87ba4"
   },
@@ -4820,6 +5276,7 @@
         "partner": "Francisco Rojas Lemus"
       }
     ],
+    "inscripciones": [],
     "id": "arturo-simon-burgos-quinones",
     "color": "#eb6834"
   },
@@ -4866,6 +5323,14 @@
         "position": null,
         "points": 10,
         "partner": "Josefa Torres"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
       }
     ],
     "id": "cristobal-mena",
@@ -4916,6 +5381,7 @@
         "partner": "Jhon Alcons Calle"
       }
     ],
+    "inscripciones": [],
     "id": "jorge-higuera",
     "color": "#4a3aa7"
   },
@@ -4964,6 +5430,7 @@
         "partner": "Martina Medina"
       }
     ],
+    "inscripciones": [],
     "id": "matias-lema",
     "color": "#008300"
   },
@@ -5000,6 +5467,14 @@
         "position": 3,
         "points": 60,
         "partner": "Vicente Fuentes"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
       }
     ],
     "id": "sebastian-millacoy",
@@ -5051,6 +5526,14 @@
         "partner": "Camilo Huenchuman"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19"
+        ]
+      }
+    ],
     "id": "siul-carrasco",
     "color": "#e87ba4"
   },
@@ -5087,6 +5570,14 @@
         "position": 3,
         "points": 60,
         "partner": "Lorenzo Loyola Soto"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
       }
     ],
     "id": "vicente-gonzalez-candia",
@@ -5127,6 +5618,14 @@
         "partner": "Matias Astudillo"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
+      }
+    ],
     "id": "hernan-vera",
     "color": "#4a3aa7"
   },
@@ -5163,6 +5662,14 @@
         "position": 5,
         "points": 30,
         "partner": "Thomas Rohde Cvitanic"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
       }
     ],
     "id": "juan-jose-cos-cortes",
@@ -5203,13 +5710,14 @@
         "partner": "Emilia Gonzalez"
       }
     ],
+    "inscripciones": [],
     "id": "nicole-schneiter",
     "color": "#e87ba4"
   },
   {
     "name": "Ramses Cassis Durango",
-    "club": "Club Bádminton Limarí",
-    "club_short": "CB Limarí",
+    "club": "Independiente",
+    "club_short": "Independiente",
     "total_points": 60,
     "gold": 0,
     "silver": 0,
@@ -5241,8 +5749,17 @@
         "partner": "Alonso Maldonado Sanchez"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
+      }
+    ],
     "id": "ramses-cassis-durango",
-    "color": "#eb6834"
+    "color": "#898781"
   },
   {
     "name": "Thomas Rohde Cvitanic",
@@ -5277,6 +5794,14 @@
         "position": 5,
         "points": 30,
         "partner": "Juan-José Cos Cortés"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
       }
     ],
     "id": "thomas-rohde-cvitanic",
@@ -5327,6 +5852,7 @@
         "partner": null
       }
     ],
+    "inscripciones": [],
     "id": "jiahong-wang",
     "color": "#eb6834"
   },
@@ -5365,6 +5891,7 @@
         "partner": "Ramses Cassis Durango"
       }
     ],
+    "inscripciones": [],
     "id": "alonso-maldonado-sanchez",
     "color": "#eb6834"
   },
@@ -5403,6 +5930,7 @@
         "partner": "Ricardo Muñoz Toledo"
       }
     ],
+    "inscripciones": [],
     "id": "andres-trigo",
     "color": "#2a78d6"
   },
@@ -5441,6 +5969,7 @@
         "partner": "Martin Dodman"
       }
     ],
+    "inscripciones": [],
     "id": "clement-delvigne",
     "color": "#1baf7a"
   },
@@ -5477,6 +6006,14 @@
         "position": 5,
         "points": 30,
         "partner": "Haofeng Luo Wo"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
       }
     ],
     "id": "haojun-luo-wo",
@@ -5517,6 +6054,14 @@
         "partner": "Hernan Vera"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
+      }
+    ],
     "id": "matias-astudillo",
     "color": "#4a3aa7"
   },
@@ -5543,6 +6088,14 @@
         "position": 5,
         "points": 30,
         "partner": null
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17"
+        ]
       }
     ],
     "id": "consuelo-moscoso-cordova",
@@ -5593,6 +6146,14 @@
         "partner": "Javiera Villalón Vivar"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
     "id": "martin-dodman",
     "color": "#1baf7a"
   },
@@ -5621,6 +6182,7 @@
         "partner": null
       }
     ],
+    "inscripciones": [],
     "id": "rafael-silva-pino",
     "color": "#e87ba4"
   },
@@ -5657,6 +6219,14 @@
         "position": null,
         "points": 10,
         "partner": "Jorge Higuera"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
       }
     ],
     "id": "benjamin-higuera",
@@ -5697,6 +6267,7 @@
         "partner": "Emilia Palma"
       }
     ],
+    "inscripciones": [],
     "id": "daniel-rebolledo",
     "color": "#4a3aa7"
   },
@@ -5733,6 +6304,14 @@
         "position": null,
         "points": 10,
         "partner": "Arturo Simon Burgos Quiñones"
+      }
+    ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
       }
     ],
     "id": "francisco-rojas-lemus",
@@ -5773,6 +6352,14 @@
         "partner": "Daniel Astudillo Opazo"
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
     "id": "javier-aretsen",
     "color": "#e87ba4"
   },
@@ -5811,6 +6398,7 @@
         "partner": "Martin Dodman"
       }
     ],
+    "inscripciones": [],
     "id": "javiera-villalon-vivar",
     "color": "#1baf7a"
   },
@@ -5849,6 +6437,7 @@
         "partner": "Jiahong Wang"
       }
     ],
+    "inscripciones": [],
     "id": "jose-alcayaga-contreras",
     "color": "#eb6834"
   },
@@ -5877,6 +6466,7 @@
         "partner": null
       }
     ],
+    "inscripciones": [],
     "id": "lucas-contreras-sepulveda",
     "color": "#e87ba4"
   },
@@ -5905,6 +6495,7 @@
         "partner": "Ricardo Muñoz Toledo"
       }
     ],
+    "inscripciones": [],
     "id": "matias-olagnier",
     "color": "#e87ba4"
   },
@@ -5933,7 +6524,480 @@
         "partner": null
       }
     ],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
     "id": "sebastian-rosselot-vasquez",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Alonso Medel Araya",
+    "club": "Club Bádminton Antofagasta",
+    "club_short": "CB Antofagasta",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "alonso-medel-araya",
+    "color": "#2a78d6"
+  },
+  {
+    "name": "Ariel Navarro Cáceres",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "ariel-navarro-caceres",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Benjamin Bahamondez Barraza",
+    "club": "Club Bádminton Antofagasta",
+    "club_short": "CB Antofagasta",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "benjamin-bahamondez-barraza",
+    "color": "#2a78d6"
+  },
+  {
+    "name": "Cristian Araya Ortiz",
+    "club": "Club Bádminton Victoria",
+    "club_short": "CB Victoria",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "cristian-araya-ortiz",
+    "color": "#4a3aa7"
+  },
+  {
+    "name": "Eickhen Knauer Bravo",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "eickhen-knauer-bravo",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Fernanda Rivera Conejeros",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19"
+        ]
+      }
+    ],
+    "id": "fernanda-rivera-conejeros",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Fernando Cavieres Avilés",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
+      }
+    ],
+    "id": "fernando-cavieres-aviles",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Gabriel Fernandes Morales",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "gabriel-fernandes-morales",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Jiayu Huang",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17",
+          "Sub19"
+        ]
+      }
+    ],
+    "id": "jiayu-huang",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Juan Bolivar Calderón",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17"
+        ]
+      }
+    ],
+    "id": "juan-bolivar-calderon",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Juan Saavedra Cordova",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19"
+        ]
+      }
+    ],
+    "id": "juan-saavedra-cordova",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Loreto Pontigo Oberreuter",
+    "club": "Independiente",
+    "club_short": "Independiente",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "loreto-pontigo-oberreuter",
+    "color": "#898781"
+  },
+  {
+    "name": "Lucas Quichel",
+    "club": "Club Deportivo Kaizen",
+    "club_short": "CDSC Kaizen",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15",
+          "Sub17"
+        ]
+      }
+    ],
+    "id": "lucas-quichel",
+    "color": "#008300"
+  },
+  {
+    "name": "Luciano Mamani Pacheco",
+    "club": "Club Bádminton Antofagasta",
+    "club_short": "CB Antofagasta",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub15"
+        ]
+      }
+    ],
+    "id": "luciano-mamani-pacheco",
+    "color": "#2a78d6"
+  },
+  {
+    "name": "María Valdebenito Novoa",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "maria-valdebenito-novoa",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Matias Traviesa Frugone",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "matias-traviesa-frugone",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Matías Gompertz Pérez",
+    "club": "Independiente",
+    "club_short": "Independiente",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "matias-gompertz-perez",
+    "color": "#898781"
+  },
+  {
+    "name": "Monica Cordoba Navarro",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "monica-cordoba-navarro",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Sebastian Peña Fajuri",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "sebastian-pena-fajuri",
+    "color": "#e87ba4"
+  },
+  {
+    "name": "Sebastian Sanhueza",
+    "club": "Club Deportivo Kaizen",
+    "club_short": "CDSC Kaizen",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub17"
+        ]
+      }
+    ],
+    "id": "sebastian-sanhueza",
+    "color": "#008300"
+  },
+  {
+    "name": "Zhi Xing Lai Li",
+    "club": "Club Bádminton Santiago",
+    "club_short": "CB Santiago",
+    "total_points": 0,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0,
+    "categories": [],
+    "modalities": [],
+    "results": [],
+    "inscripciones": [
+      {
+        "fecha": 3,
+        "categorias": [
+          "Sub19",
+          "Adulto"
+        ]
+      }
+    ],
+    "id": "zhi-xing-lai-li",
     "color": "#e87ba4"
   }
 ]

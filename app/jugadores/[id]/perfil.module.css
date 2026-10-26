@@ -162,6 +162,37 @@
   color: var(--text-muted);
 }
 
+.vacio {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.sinResultados {
+  padding: 22px;
+  border: 1px dashed var(--gridline);
+  border-radius: var(--radius-m);
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.inscripcion {
+  margin-bottom: 20px;
+}
+
+.inscripcionMeta {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.inscripcionLink {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
 /* La tabla general pide 640 px; esta, con menos columnas útiles, cabe en
    540. Así entra en la columna de resultados del diseño de dos columnas
    (~588 px a 1024 de ancho) sin desplazarse hacia el lado. */

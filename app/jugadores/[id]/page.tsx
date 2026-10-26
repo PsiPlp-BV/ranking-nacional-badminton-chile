@@ -5,11 +5,14 @@ import Reveal from "@/components/Reveal";
 import { Avatar, ClubTag, Medals } from "@/components/bits";
 import {
   CATEGORIES,
+  FECHAS,
   FECHA_NUMS,
   PLAYERS,
+  categoriasVisibles,
   categoryById,
   getPlayer,
   getPlayerByName,
+  inscripcionesPendientes,
   modalityById,
   resultLabel,
 } from "@/lib/data";
@@ -41,6 +44,18 @@ export default async function PerfilPage({ params }: { params: Promise<{ id: str
   if (!player) notFound();
 
   const fechasJugadas = [...new Set(player.results.map((r) => r.fecha))].sort((a, b) => a - b);
+  const pendientes = inscripcionesPendientes(player).map((i) => ({
+    ...i,
+    fecha: FECHAS.find((f) => f.numero === i.fecha)!,
+  }));
+  const cats = categoriasVisibles(player);
+  const resumen = player.results.length
+    ? `· ${player.results.length} resultados en ${
+        fechasJugadas.length > 1 ? `${fechasJugadas.length} fechas` : `la ${fechasJugadas[0]}ª Fecha`
+      }`
+    : pendientes.length
+      ? `· Debuta en la ${pendientes[0].fecha.numero}ª Fecha`
+      : "· Sin resultados registrados";
 
   const porCategoria = player.categories.map((cat) => ({
     cat,
@@ -88,15 +103,10 @@ export default async function PerfilPage({ params }: { params: Promise<{ id: str
               <h1 className={styles.name}>{player.name}</h1>
               <p className={styles.sub}>
                 <ClubTag club={player.club} />
-                <span className={ui.dim}>
-                  · {player.results.length} resultados en{" "}
-                  {fechasJugadas.length > 1
-                    ? `${fechasJugadas.length} fechas`
-                    : `la ${fechasJugadas[0]}ª Fecha`}
-                </span>
+                <span className={ui.dim}>{resumen}</span>
               </p>
               <div className={styles.badges}>
-                {player.categories.map((c) => {
+                {cats.map((c) => {
                   const cat = CATEGORIES.find((x) => x.id === c);
                   return (
                     <span
@@ -127,14 +137,18 @@ export default async function PerfilPage({ params }: { params: Promise<{ id: str
           <div className={styles.stats}>
             <div className={`${ui.card} ${ui.cardPad}`}>
               <p className="eyebrow">Puntos por categoría</p>
-              <ul className={styles.catList}>
-                {porCategoria.map((pc) => (
-                  <li key={pc.cat}>
-                    <span style={{ color: pc.color, fontWeight: 700 }}>{pc.label}</span>
-                    <span className={`${styles.catPts} num`}>{pc.points}</span>
-                  </li>
-                ))}
-              </ul>
+              {porCategoria.length ? (
+                <ul className={styles.catList}>
+                  {porCategoria.map((pc) => (
+                    <li key={pc.cat}>
+                      <span style={{ color: pc.color, fontWeight: 700 }}>{pc.label}</span>
+                      <span className={`${styles.catPts} num`}>{pc.points}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className={styles.vacio}>Aún sin puntos</p>
+              )}
             </div>
             <div className={`${ui.card} ${ui.cardPad}`}>
               <p className="eyebrow">Medallas</p>
@@ -164,6 +178,14 @@ export default async function PerfilPage({ params }: { params: Promise<{ id: str
             <h2 className={ui.sectionTitle} style={{ fontSize: 20, marginBottom: 12 }}>
               Resultados — Temporada 2026
             </h2>
+            {!resultados.length ? (
+              <p className={styles.sinResultados}>
+                Todavía sin resultados.
+                {pendientes.length
+                  ? ` Aparecerán aquí cuando se cargue la ${pendientes[0].fecha.numero}ª Fecha.`
+                  : ""}
+              </p>
+            ) : (
             <div className={`${ui.card}`} style={{ overflow: "hidden" }}>
               <div className={ui.tableWrap}>
                 <table className={`${ui.table} ${styles.resultados}`}>
@@ -213,9 +235,44 @@ export default async function PerfilPage({ params }: { params: Promise<{ id: str
                 </table>
               </div>
             </div>
+            )}
           </Reveal>
 
           <Reveal delay={0.06} className={styles.sideCol}>
+            {pendientes.map((i) => (
+              <div key={i.fecha.numero} className={`${ui.card} ${ui.cardPad} ${styles.inscripcion}`}>
+                <h2 className={ui.cardTitle}>Inscripción en la {i.fecha.numero}ª Fecha</h2>
+                <div className={styles.badges}>
+                  {i.categorias.map((c) => (
+                    <span
+                      key={c}
+                      className={ui.badge}
+                      style={{
+                        background: `color-mix(in srgb, ${categoryById[c]?.color ?? "#888"} 14%, transparent)`,
+                        color: categoryById[c]?.color,
+                      }}
+                    >
+                      {categoryById[c]?.label ?? c}
+                    </span>
+                  ))}
+                </div>
+                <p className={styles.inscripcionMeta}>
+                  {i.fecha.fechaTexto}
+                  <br />
+                  {i.fecha.sedeCorta ?? i.fecha.sede}
+                </p>
+                {i.fecha.fuenteUrl && (
+                  <a
+                    href={i.fecha.fuenteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${styles.link} ${styles.inscripcionLink}`}
+                  >
+                    Ver cuadros oficiales →
+                  </a>
+                )}
+              </div>
+            ))}
             <div className={`${ui.card} ${ui.cardPad}`}>
               <h2 className={ui.cardTitle}>Posición en ranking</h2>
               <ul className={styles.ranks}>
@@ -235,6 +292,7 @@ export default async function PerfilPage({ params }: { params: Promise<{ id: str
                   </li>
                 ))}
               </ul>
+              {!posiciones.length && <p className={styles.vacio}>Todavía no figura en ningún ranking.</p>}
               <p className={styles.rankNote}>
                 Cada fila es un ranking distinto. Las categorías nunca se suman entre sí.
               </p>
