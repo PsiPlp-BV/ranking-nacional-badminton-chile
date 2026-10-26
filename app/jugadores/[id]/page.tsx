@@ -166,7 +166,7 @@ export default async function PerfilPage({ params }: { params: Promise<{ id: str
             </h2>
             <div className={`${ui.card}`} style={{ overflow: "hidden" }}>
               <div className={ui.tableWrap}>
-                <table className={ui.table}>
+                <table className={`${ui.table} ${styles.resultados}`}>
                   <thead>
                     <tr>
                       <th style={{ width: 54 }}>Fecha</th>
@@ -182,16 +182,16 @@ export default async function PerfilPage({ params }: { params: Promise<{ id: str
                       const partner = r.partner ? getPlayerByName(r.partner) : null;
                       return (
                         <tr key={`${r.fecha}-${r.event}-${i}`}>
-                          <td>
+                          <td className={styles.cFecha}>
                             <span className={ui.badge}>F{r.fecha}</span>
                           </td>
-                          <td>
+                          <td className={styles.cCat}>
                             <span style={{ color: categoryById[r.category]?.color, fontWeight: 700 }}>
                               {categoryById[r.category]?.label ?? r.category}
                             </span>
                           </td>
-                          <td>{modalityById[r.modality]?.label ?? r.modality}</td>
-                          <td>
+                          <td className={styles.cMod}>{modalityById[r.modality]?.label ?? r.modality}</td>
+                          <td className={`${styles.cPar} ${r.partner ? "" : styles.vacia}`}>
                             {r.partner ? (
                               partner ? (
                                 <Link href={`/jugadores/${partner.id}`} className={styles.link}>
@@ -204,8 +204,8 @@ export default async function PerfilPage({ params }: { params: Promise<{ id: str
                               <span className={ui.dim}>—</span>
                             )}
                           </td>
-                          <td>{resultLabel(r.position)}</td>
-                          <td className={`${ui.numCell} ${ui.strong}`}>{r.points}</td>
+                          <td className={styles.cRes}>{resultLabel(r.position)}</td>
+                          <td className={`${ui.numCell} ${ui.strong} ${styles.cPts}`}>{r.points}</td>
                         </tr>
                       );
                     })}

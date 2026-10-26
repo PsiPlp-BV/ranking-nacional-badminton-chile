@@ -162,12 +162,78 @@
   color: var(--text-muted);
 }
 
+/* La tabla general pide 640 px; esta, con menos columnas útiles, cabe en
+   540. Así entra en la columna de resultados del diseño de dos columnas
+   (~588 px a 1024 de ancho) sin desplazarse hacia el lado. */
+table.resultados {
+  min-width: 540px;
+}
+
 @media (max-width: 1000px) {
   .stats {
     grid-template-columns: repeat(2, 1fr);
   }
   .layout {
     grid-template-columns: 1fr;
+  }
+}
+
+/* En celulares cada resultado es una ficha: como tabla, Resultado y Puntos
+   quedaban fuera de la pantalla y había que desplazar para verlos. */
+@media (max-width: 600px) {
+  table.resultados {
+    min-width: 0;
+  }
+  table.resultados thead {
+    display: none;
+  }
+  table.resultados,
+  table.resultados tbody {
+    display: block;
+  }
+  table.resultados tbody tr {
+    display: grid;
+    grid-template-columns: auto auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      "fecha cat . pts"
+      "mod   mod mod pts"
+      "res   res res res"
+      "par   par par par";
+    gap: 5px 8px;
+    align-items: center;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--gridline);
+  }
+  table.resultados tbody tr:last-child {
+    border-bottom: none;
+  }
+  table.resultados tbody td {
+    display: block;
+    padding: 0;
+    border: 0;
+  }
+  .cFecha { grid-area: fecha; }
+  .cCat { grid-area: cat; }
+  .cMod { grid-area: mod; font-weight: 600; }
+  .cRes { grid-area: res; font-size: 12.5px; color: var(--text-secondary); }
+  .cPar { grid-area: par; font-size: 12.5px; color: var(--text-secondary); }
+  .cPar::before { content: "con "; }
+  .vacia { display: none !important; }
+  .cPts {
+    grid-area: pts;
+    align-self: start;
+    font-family: var(--font-display), sans-serif;
+    font-size: 21px;
+    line-height: 1.05;
+    text-align: right;
+  }
+  .cPts::after {
+    content: "pts";
+    display: block;
+    font-family: var(--font-sans), sans-serif;
+    font-size: 10.5px;
+    font-weight: 600;
+    color: var(--text-muted);
   }
 }
 
