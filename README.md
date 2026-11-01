@@ -1,11 +1,12 @@
-# Ranking Nacional de Bádminton — Chile 2026 · versión Next
+# Ranking Nacional de Bádminton — Chile 2026
 
-Prueba de rediseño del sitio del Ranking Nacional de FEDEBADCHILE, construida
-con Next.js. **Es una versión aparte**: el sitio oficial en producción sigue
-siendo el estático de `../Ranking_nacional_badminton`, y este proyecto no lo
-toca ni lo reemplaza.
+Sitio **oficial** del Ranking Nacional de FEDEBADCHILE, construido con
+Next.js y publicado en Vercel. Reemplaza al sitio estático original
+(`PsiPlp-BV/Ranking_Nacional_Badminton`), que quedó solo como redirección: sus
+enlaces viejos (`…pages.dev/#/jugador/<id>`, impresos en los QR de las
+credenciales) llevan a la página equivalente de este sitio.
 
-Qué cambia respecto del original:
+Qué cambió respecto del original:
 
 - **Navegación por páginas** en vez de una sola página con scroll.
 - **Diseño minimalista** con la paleta y el logo oficiales intactos.
@@ -17,34 +18,59 @@ Qué cambia respecto del original:
 
 ```bash
 npm install
-npm run dev        # http://localhost:3000
-npm run build      # build de producción
-npx eslint .       # lint
+npm run dev          # http://localhost:3000
+npm run build        # build de producción
+npm run lint         # lint
+npm test             # motor de ranking (lib/ranking.ts)
+npm run test:datos   # pipeline de datos (Python)
 ```
 
 ## De dónde salen los datos
 
-Los datos **no se recalculan acá**. La fuente de verdad sigue siendo el
-pipeline Python del repo original (`scripts/build_data.py` → `js/data.js`), que
-transcribe los cuadros oficiales de Tournamentsoftware. Este proyecto solo
-traduce ese resultado a JSON:
+- `datos/` — pipeline Python que transcribe los cuadros oficiales de
+  Tournamentsoftware: un `fechaN_results.py` por fecha (un `add_event(...)`
+  por cuadro), `clubs.py` con nombre, sigla y color de cada club, y
+  `build_data.py`, que calcula puntos, medallas y la tabla de clubes y escribe
+  **`data/players.json` y `data/clubs.json`** (generados: no se editan a mano).
+- `data/meta.json` — se edita a mano: fechas del calendario (sede, estado,
+  cuadros, inscritos, enlace oficial), categorías, modalidades, tabla de
+  puntos, reglamento y datos de la Federación.
 
 ```bash
-node scripts/sync-data.mjs
+npm run datos        # = python datos/build_data.py
 ```
 
-El script lee `js/data.js` y `js/meta.js` del repo original, escribe
-`data/players.json`, `data/clubs.json` y `data/meta.json`, y copia el logo de
-la Federación y la ilustración del volante a `public/`. Apunta a otra ruta con
-`RANKING_SOURCE=/ruta/al/repo node scripts/sync-data.mjs`.
+La integración continua corre los tests de ambos lados y además regenera los
+JSON y falla si no coinciden con los publicados.
 
-Cuando se agregue la 3ª Fecha: corre el pipeline allá y después este script.
-La tabla de clubes gana su columna F3 sola, porque se arma desde `FECHAS`.
+`lib/ranking.ts` es un port fiel del motor del sitio original: las categorías
+nunca se mezclan, en dobles ambos suman completo y los empates comparten
+posición. `tests/ranking.test.mjs` son los mismos tests de allá, corriendo
+sobre este archivo.
 
-`lib/ranking.ts` es un port fiel de `js/ranking.js`: mantiene las mismas
-garantías (las categorías nunca se mezclan, en dobles ambos suman completo, los
-empates comparten posición) para que siga siendo comparable con los tests del
-repo original.
+## Agregar una fecha
+
+1. Lee los cuadros oficiales en Tournamentsoftware. Usa la vista de cada
+   cuadro (`/tournament/<id>/draw/<n>`), que trae el nombre de la ronda de cada
+   partido; la lista `sport/drawmatches.aspx` **no** viene en orden de ronda.
+   Elimination: campeón 1°, finalista 2°, perdedores de semis 3° (sin partido
+   por el 3er puesto), de cuartos 5°–8°, de rondas previas participación.
+   Round Robin: la tabla de posiciones oficial. Un evento sin cuadro no
+   reparte puntos.
+2. Crea `datos/fechaN_results.py` con la forma de `fecha3_results.py`: plantel
+   (`NAME_CLUB`), `ALIAS` si Tournamentsoftware escribe distinto a alguien que
+   ya tiene perfil (cambiar el nombre cambiaría la dirección de su perfil), y
+   un `add_event(...)` por cuadro. Club nuevo: agrégalo a `datos/clubs.py`.
+3. Agrégalo a `FECHAS` y `FECHA_NUMS` en `datos/build_data.py`.
+4. `npm run test:datos` y `npm run datos`. Revisa lo que imprime (cambios de
+   club entre fechas y tabla de clubes): es la señal más rápida de una
+   transcripción torcida.
+5. En `data/meta.json`, marca la fecha como `"completado"` y completa
+   `eventos` (cuadros disputados), `inscritos` y `fuenteUrl`.
+
+Criterio de walkover (desde la 3ª Fecha): quien no jugó ningún partido en un
+cuadro no suma puntos en él, aunque el cuadro lo ubique; quien jugó y se
+retiró de un Round Robin suma participación.
 
 ### Rama masculina y femenina
 
@@ -56,8 +82,8 @@ dato deportivo público, como su club o su categoría—, no una afirmación sob
 su identidad; por eso el sitio la nombra "rama" y no "sexo".
 
 El dobles mixto no se usa para deducir, porque cada pareja tiene un integrante
-de cada rama. Con los datos actuales alcanza igual: las 97 personas del
-circuito quedan asignadas sin ambigüedad ni conflictos (65 y 32), y las 53
+de cada rama. Con los datos actuales alcanza igual: las 118 personas del
+circuito quedan asignadas sin ambigüedad ni conflictos (82 y 36), y las 82
 parejas de mixto resultan tener siempre una de cada rama — que es la
 comprobación cruzada de que la deducción está bien.
 
@@ -148,5 +174,6 @@ que termine, y la fila se ve vacía; con cambiar la `key` basta.
 
 ## Estado
 
-Prueba de diseño, no desplegada. El sitio en producción sigue siendo el
-estático en Cloudflare Pages.
+En producción en Vercel (https://ranking-nacional-badminton-next.vercel.app),
+con deploy automático al hacer push a `main`. Temporada 2026 cerrada: las 3
+fechas cargadas.

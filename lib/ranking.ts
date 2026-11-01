@@ -3,8 +3,8 @@
  *
  * Port fiel de `js/ranking.js` del sitio original. Es la pieza que decide
  * dónde queda un deportista real en un ranking oficial, así que mantiene las
- * mismas garantías, con los mismos nombres, para que siga siendo comparable
- * con `tests/ranking.test.js` de allá:
+ * mismas garantías, con los mismos nombres; `tests/ranking.test.mjs` son los
+ * tests de allá, corriendo sobre este archivo:
  *
  *  - Las categorías NUNCA se mezclan. "general" combina modalidades dentro de
  *    UNA categoría; quien juega dos categorías no debe rankear más alto solo
