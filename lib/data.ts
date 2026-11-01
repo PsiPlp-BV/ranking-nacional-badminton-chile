@@ -81,8 +81,8 @@ export function topInCategory(category: string, n = 3) {
 
    El dobles mixto no define rama por sí solo (cada pareja tiene uno de cada),
    así que no se usa para deducir. Con los datos actuales alcanza igual: las
-   97 personas con resultados quedan asignadas sin ambigüedad y sin conflictos,
-   y las 53 parejas de mixto resultan tener siempre un integrante de cada
+   118 personas con resultados quedan asignadas sin ambigüedad y sin conflictos,
+   y las 82 parejas de mixto resultan tener siempre un integrante de cada
    rama, que es la comprobación cruzada de que la deducción está bien. */
 
 export type Rama = "Masculino" | "Femenino";

@@ -1,62 +1,66 @@
 [
   {
-    "name": "Club Deportivo Kaizen",
-    "short": "CDSC Kaizen",
-    "color": "#008300",
-    "athletes": 21,
-    "gold": 14,
-    "silver": 30,
-    "bronze": 26,
-    "by_fecha": {
-      "1": 230,
-      "2": 269
-    },
-    "total_points": 499,
-    "rank": 1
-  },
-  {
     "name": "Club Bádminton Antofagasta",
     "short": "CB Antofagasta",
     "color": "#2a78d6",
-    "athletes": 23,
-    "gold": 30,
-    "silver": 12,
-    "bronze": 13,
+    "athletes": 26,
+    "gold": 47,
+    "silver": 25,
+    "bronze": 26,
     "by_fecha": {
       "1": 256,
-      "2": 226
+      "2": 226,
+      "3": 314
     },
-    "total_points": 482,
+    "total_points": 796,
+    "rank": 1
+  },
+  {
+    "name": "Club Deportivo Kaizen",
+    "short": "CDSC Kaizen",
+    "color": "#008300",
+    "athletes": 23,
+    "gold": 17,
+    "silver": 36,
+    "bronze": 35,
+    "by_fecha": {
+      "1": 230,
+      "2": 269,
+      "3": 161
+    },
+    "total_points": 660,
     "rank": 2
   },
   {
     "name": "Club Bádminton Victoria",
     "short": "CB Victoria",
     "color": "#4a3aa7",
-    "athletes": 15,
-    "gold": 8,
-    "silver": 6,
-    "bronze": 15,
+    "athletes": 17,
+    "gold": 16,
+    "silver": 10,
+    "bronze": 27,
     "by_fecha": {
       "1": 103,
-      "2": 167
+      "2": 167,
+      "3": 196
     },
-    "total_points": 270,
+    "total_points": 466,
     "rank": 3
   },
   {
     "name": "Club Bádminton Santiago",
     "short": "CB Santiago",
     "color": "#e87ba4",
-    "athletes": 19,
-    "gold": 2,
-    "silver": 3,
-    "bronze": 19,
+    "athletes": 33,
+    "gold": 4,
+    "silver": 8,
+    "bronze": 29,
     "by_fecha": {
       "1": 134,
-      "2": 120
+      "2": 120,
+      "3": 166
     },
-    "total_points": 254,
+    "total_points": 420,
     "rank": 4
   },
   {
@@ -65,29 +69,15 @@
     "color": "#eb6834",
     "athletes": 12,
     "gold": 0,
-    "silver": 2,
-    "bronze": 5,
+    "silver": 4,
+    "bronze": 8,
     "by_fecha": {
       "1": 107,
-      "2": 0
+      "2": 0,
+      "3": 75
     },
-    "total_points": 107,
+    "total_points": 182,
     "rank": 5
-  },
-  {
-    "name": "Club Bádminton Concón",
-    "short": "CB Concón",
-    "color": "#8a5a3c",
-    "athletes": 1,
-    "gold": 0,
-    "silver": 0,
-    "bronze": 3,
-    "by_fecha": {
-      "1": 0,
-      "2": 60
-    },
-    "total_points": 60,
-    "rank": 6
   },
   {
     "name": "Club Bádminton Esperanza de Quilpué",
@@ -99,10 +89,11 @@
     "bronze": 0,
     "by_fecha": {
       "1": 57,
-      "2": 0
+      "2": 0,
+      "3": 52
     },
-    "total_points": 57,
-    "rank": 7
+    "total_points": 109,
+    "rank": 6
   },
   {
     "name": "Club Bádminton Valparaíso",
@@ -114,9 +105,26 @@
     "bronze": 0,
     "by_fecha": {
       "1": 53,
-      "2": 0
+      "2": 0,
+      "3": 51
     },
-    "total_points": 53,
+    "total_points": 104,
+    "rank": 7
+  },
+  {
+    "name": "Club Bádminton Concón",
+    "short": "CB Concón",
+    "color": "#8a5a3c",
+    "athletes": 1,
+    "gold": 0,
+    "silver": 0,
+    "bronze": 3,
+    "by_fecha": {
+      "1": 0,
+      "2": 60,
+      "3": 0
+    },
+    "total_points": 60,
     "rank": 8
   }
 ]
