@@ -43,7 +43,7 @@ export default async function RankingPage({
             <p style={{ marginTop: 10 }}>
               La rama sale de las modalidades del propio torneo: quien juega Individual o
               Dobles Masculino compite en la rama masculina, y viceversa. Al elegir una,
-              las posiciones se renumeran dentro de ella —el ranking femenino parte en 1— y
+              las posiciones se renumeran dentro de ella y
               el puntaje sigue siendo el total del deportista, incluido el dobles mixto. En
               mixto no aplica: cada pareja tiene un integrante de cada rama.
             </p>

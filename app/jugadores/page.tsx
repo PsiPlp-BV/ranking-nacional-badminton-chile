@@ -24,8 +24,7 @@ export default function JugadoresPage() {
         <PlayersGrid />
         <Reveal>
           <p className={ui.sectionLede} style={{ marginTop: 28 }}>
-            Solo se publican datos deportivos públicos: nombre, club, categoría y
-            resultados. No se publican RUT, contacto, fecha de nacimiento ni fotografías.
+            Solo se publican datos deportivos públicos.
           </p>
         </Reveal>
       </section>
